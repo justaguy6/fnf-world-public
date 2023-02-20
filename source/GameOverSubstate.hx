@@ -77,6 +77,8 @@ class GameOverSubstate extends MusicBeatSubstate
 
 		FlxG.camera.scroll.set();
 		FlxG.camera.target = null;
+		
+		addVirtualPad(NONE, A_B);
 	}
 
 	var isFollowingAlready:Bool = false;
