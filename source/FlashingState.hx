@@ -48,6 +48,8 @@ class FlashingState extends MusicBeatState
 		warning.scrollFactor.set(1.0, 1.0);
 		warning.screenCenter();
 		add(warning);
+		
+		addVirtualPad(NONE, A);
 	}
 
 	override function update(elapsed:Float)
