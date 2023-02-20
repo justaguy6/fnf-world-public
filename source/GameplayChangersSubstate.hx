@@ -154,6 +154,8 @@ class GameplayChangersSubstate extends MusicBeatSubstate
 
 		changeSelection();
 		reloadCheckboxes();
+		
+		addVirtualPad(LEFT_FULL, A_B_C);
 	}
 
 	var nextAccept:Int = 5;
