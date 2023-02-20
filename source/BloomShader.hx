@@ -27,11 +27,11 @@ void main(void)
 {
 	vec2 uv = openfl_TextureCoordv.xy ;
 	const float Pi = 6.28318530718; // Pi*2
-	vec4 Color = texture2D( bitmap, uv);
+	vec4 Color = texture2D(bitmap, uv);
 
 	for( float d=0.0; d<Pi; d+=Pi/Directions){
 		for(float i=1.0/Quality; i<=1.0; i+=1.0/Quality){
-			Color += flixel_texture2D( bitmap, uv+vec2(cos(d),sin(d))*Size*i/openfl_TextureSize.xy);
+			Color += flixel_texture2D(bitmap, uv+vec2(cos(d),sin(d))*Size*i/openfl_TextureSize.xy);
 		}
 	}
 
