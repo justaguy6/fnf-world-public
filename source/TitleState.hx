@@ -318,7 +318,7 @@ class TitleState extends MusicBeatState
 		if(MainMenuState.mainweekbeat && !FreeplayState.redlakeUnlocked) {// u beat the main week but havent played omc yet
 			add(gtree);
 			remove(tree2);
-                {
+                
 				var challenge = new Lock.NewChallenger(FlxG.camera);
 				add(challenge);
 				challenge.challenge('red-lake', 0, function() {}, true, false);
@@ -342,7 +342,7 @@ class TitleState extends MusicBeatState
 			foxy.y += 750;
 		add(foxy);
 		if(MainMenuState.mainweekbeat) {
-			{
+			
 			foxyclick++;
 			if(foxyclick == 6) 
 			{
@@ -364,7 +364,7 @@ class TitleState extends MusicBeatState
 			fred.y += 750;
 		add(fred);
 		if(MainMenuState.mainweekbeat) {//u beat main week
-			{
+			
 			fredclick++;
 			if(fredclick == 83) {
 				var challenge = new Lock.NewChallenger(FlxG.camera);
@@ -393,7 +393,7 @@ class TitleState extends MusicBeatState
 		if(!closedState)
 			titleText.x += 800;
 		add(titleText);
-		{
+		
 			titleText.color = FlxColor.WHITE;
 
 			FlxG.camera.flash(ClientPrefs.flashing ? FlxColor.WHITE : 0x4CFFFFFF, 1);
