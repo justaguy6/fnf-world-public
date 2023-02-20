@@ -245,6 +245,8 @@ class MainMenuState extends MusicBeatState
 			challenge.challenge('Isolation', 0, function() {}, false, true);
 		}
 
+		addVirtualPad(NONE, B);
+		
 		super.create();
 	}
 
