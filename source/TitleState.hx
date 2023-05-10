@@ -35,6 +35,8 @@ import flixel.tweens.FlxEase;
 import flixel.tweens.FlxTween;
 import flixel.util.FlxColor;
 import flixel.util.FlxTimer;
+import flixel.input.touch.FlxTouch;
+
 import lime.app.Application;
 import openfl.Assets;
 
